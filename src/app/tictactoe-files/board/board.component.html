@@ -1,0 +1,13 @@
+
+
+    <div class="board">
+        <div class="row" *ngFor="let row of board; let r=index">
+            <cell *ngFor="let row of row;let c=index"
+            [cord]=[r,c]
+            [rowSize]="boardSize-1"
+            (onCellPressed)="recieveCellInfo($event)"
+            [currPlayer]="currPlayer"
+            [isGameOver]="isGameOver"
+            ></cell>
+        </div>
+    </div>

@@ -1,0 +1,48 @@
+:host {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.game-container__header {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    }
+
+h1  {
+    margin: 0;
+    text-align: center;
+    color: #3a5082;
+}
+
+.game-over {
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    color: #3a5082  
+}
+
+.restart-btn {
+    position: relative;
+    background-color: #80808040;
+    width: 160px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 22px;
+    border-radius: 75px;
+    padding-left: 10px;
+    transition: 150MS all;
+    box-shadow: 0px 4px 8px 0px #00000070;
+}
+
+.restart-btn:hover {
+    cursor: pointer;
+}
+.restart-btn:active {
+    cursor: pointer;
+    top: 2px;
+    box-shadow: 0px 2px 5px 0px #00000086;
+}
+

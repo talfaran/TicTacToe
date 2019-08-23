@@ -1,0 +1,17 @@
+<div class="game-container">
+    <h1 class="game-container__header">
+        Welcome to Tic-Tac-Toe
+    </h1>
+    <board
+    [currPlayer]="currPlayer"
+    [boardSize]="boardSize"
+    [isGameOver]="isGameOver"
+    (updatePlayerMove)="recievePlayerMove($event)"
+    ></board>
+</div>
+<div *ngIf="isGameOver" class="game-over">
+    {{winningText}}
+    <div class="restart-btn" (click)="restartGame()">
+        restart
+    </div>
+</div>
