@@ -15,7 +15,7 @@ export class GameComponent implements OnInit {
   winningText: string
   constructor(private gameService: GameService) {
 
-    this.boardSize = 20
+    this.boardSize = 3
   }
 
   ngOnInit() {
