@@ -27,6 +27,7 @@ export class GameComponent implements OnInit {
 
   assignBoardSize(size) {
     //the size is not really limited, but for display purposes, decided to keep it up to 30
+    //This function isn't isn use at the moment since the user can't control the board size from the UI
     if (size > 30) {
       console.error("size cannot exceed 30")
       return
