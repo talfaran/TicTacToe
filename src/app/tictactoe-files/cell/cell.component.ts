@@ -11,7 +11,7 @@ import { playerSymbols } from '../game-models/player-models';
 export class CellComponent implements OnChanges {
   XplayerIcon = require('../../../assets/Xplayer.svg')
   OplayerIcon = require('../../../assets/Oplayer.svg')
-  @Input('cord') coordinates: Array<number>; //**first item representing the row, the second the column */
+  @Input('coord') coordinates: Array<number>; //**first item representing the row, the second the column */
   @Input() rowSize: number;
   @Input() currPlayer;
   @Input() isGameOver
